@@ -89,6 +89,10 @@ img {
   height: 160px;
   width: 160px;
 }
+.cart .product .product-preview .product-name:hover {
+  font-size: 2.2em;
+  transition-delay: .5s;
+}
 .cart .product .product-preview .thumbnail .image {
   width: 100%;
   margin-top: 16px;
@@ -167,7 +171,7 @@ img {
 .cart .product .product-interactions .button.minus {
   color: #EEC960;
 }
-.button.del:after {
+.button.delete:after {
   position: absolute;
   content: "+";
   color: #EC0000;
@@ -193,7 +197,8 @@ img {
   background: rgba(255, 255, 255, 0.5);
 }
 .bill {
-  padding: 1em;
+  margin: 0 ;
+  padding:1em;;
   font-family: "market_deco";
   src: url('Market_Deco.ttf');
   text-align: center;
@@ -209,14 +214,23 @@ img {
   font-weight: bold;
   font-size: 1.6em;
 }
-.bill .subtotal .label .value {
+.bill tr td {
   width: 50%;
-  padding:0 20px;
-
+  padding: 20px 20px;
 }
-.bill .value p{
-  text-align: justify;
-  margin-left: 20px;
+/*.bill .subtotal .value .red {
+    color: #D40000;
+    margin-right: 300px;
+}*/
+.bill .saletax .label {
+  margin-right: 300px;
+}
+.subtotal .value. {
+  color: #D40000;
+}
+.bill .final {
+  color: #D40000;
+  font-size: 1.2em;
 }
 .bill .label {
   text-align: right;
@@ -243,10 +257,11 @@ img {
 }
 .actions .big-button.return {
   background: #ad6932;
-  color: #f0dccd;
+  color: #222;
 }
 .actions .big-button.return:hover {
   background: #6c411f;
+  color: #fff;
 }
 .actions .big-button.return:before {
   content: "←";
@@ -258,6 +273,7 @@ img {
 }
 .actions .big-button.go:hover {
   background: #7fb034;
+  color: #fff;
 }
 .actions .big-button.go:active {
   font-size: 2.5em;
